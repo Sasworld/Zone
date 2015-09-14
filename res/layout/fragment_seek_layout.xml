@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+    
+    <LinearLayout 
+        	android:id="@+id/hot_layout"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="vertical">
+        
+		    <EditText 
+		        android:id="@+id/find_edittext"
+		        android:layout_width="match_parent"
+		        android:layout_height="32dp"
+		        android:hint="搜索电影/音乐/商品..." 
+		        android:textSize="12dp"
+		        android:background="@drawable/gxa"
+		        android:gravity="center"/>
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="36dp"
+		        android:layout_marginTop="18dp"
+		        android:text="热词:" />
+		    
+		    <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="20dp"
+	            android:orientation="horizontal">
+	            
+		        <TextView 
+		            android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="60dp"
+			        android:textSize="12dp"
+			        android:text="天津" />
+		        <TextView 
+		            android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="62dp"
+			        android:textSize="12dp"
+			        android:text="中国梦" />
+		        <TextView 
+		            android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="64dp"
+			        android:textSize="12dp"
+			        android:text="抗战胜利日" />
+		        
+		        
+		    </LinearLayout>
+	    
+    </LinearLayout>
+
+    <GridView 
+		    android:id="@+id/question_gridview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:columnWidth="90dp"
+		    android:numColumns="auto_fit"
+		    android:verticalSpacing="10dp"
+		    android:horizontalSpacing="10dp" 
+		    android:stretchMode="columnWidth"
+		    android:gravity="center"
+		    android:scrollbars="none"
+		    android:layout_below="@+id/hot_layout">
+	</GridView>
+
+</LinearLayout>
